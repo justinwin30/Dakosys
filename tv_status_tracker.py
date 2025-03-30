@@ -244,10 +244,10 @@ class TVStatusTracker:
                         back_color = self.colors.get(status.upper(), '#FFFFFF')
 
                         if status == 'ended':
-                            text_content = 'E N D E D'
+                            text_content = ''
                             back_color = self.colors['ENDED']
                         elif status == 'canceled':
-                            text_content = 'C A N C E L L E D'
+                            text_content = ''
                             back_color = self.colors['CANCELLED']
                         elif status == 'returning series':
                             next_episode_url = f'https://api.trakt.tv/shows/{trakt_id}/next_episode?extended=full'
